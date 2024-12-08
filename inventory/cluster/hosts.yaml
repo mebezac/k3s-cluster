@@ -1,16 +1,12 @@
 server:
-  hosts:
-    apollo:
-    boreas:
-    cerus:
+  hosts: wyse-5070-04-k3s-main-01 ansible_host=10.25.30.111
+    wyse-5070-04-k3s-main-02 ansible_host=10.25.30.112
+    wyse-5070-05-k3s-main-03 ansible_host=10.25.30.113
 
 agent:
-  hosts:
-    chaos:
-    crios:
-    helios:
-    hermes:
-    hypnos:
+  hosts: wyse-5070-04-k3s-worker-01 ansible_host=10.25.30.121
+    wyse-5070-05-k3s-worker-02 ansible_host=10.25.30.122
+    wyse-5070-05-k3s-worker-03 ansible_host=10.25.30.123
 
 cluster:
   children:
