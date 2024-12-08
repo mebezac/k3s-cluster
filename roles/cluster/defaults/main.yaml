@@ -5,8 +5,8 @@ cluster_vars:
     id: '2:2'
     name: 'ASMedia Technology'
   hardware:
-    architecture: aarch64
-    product: 'Raspberry Pi'
+    architecture: x86_64
+    product: ''
   service:
     bluetooth:
       enabled: false
