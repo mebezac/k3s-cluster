@@ -21,18 +21,18 @@ k3s_vars:
   network:
     interface: eth0
   release:
-    checksum: sha256sum-arm64.txt
-    file: k3s-arm64
+    checksum: sha256sum-amd64.txt
+    file: k3s-amd64
     repository:
       name: k3s
       org: k3s-io
     version: v1.30.6+k3s1
   server:
     api:
-      host: 192.168.4.10
+      host: 10.25.30.80
       port: 6443
     cluster:
-      dns: 10.43.0.10
+      dns: 10.25.30.1
       domain: cluster.local
     controlplane:
       tainted: true
@@ -42,7 +42,7 @@ k3s_vars:
     kubeconfig:
       local: true
     tls_san:
-      - 192.168.4.10
+      - 10.25.30.80
   service:
     debug: false
   tolerations:
