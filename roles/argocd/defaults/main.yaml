@@ -98,7 +98,7 @@ argocd_vars:
         subdomain: argocd
       infrastructure:
         annotations:
-          io.cilium/lb-ipam-ips: 192.168.4.18
+          io.cilium/lb-ipam-ips: 10.25.30.83
       resources:
         limits:
           cpu: null
@@ -117,7 +117,7 @@ argocd_vars:
           39386635376363376135303438616537386437383036636239373861666435666538
   release:
     checksums: cli_checksums.txt
-    file: argocd-linux-arm64
+    file: argocd-linux-amd64
     repository:
       name: argo-cd
       org: argoproj
